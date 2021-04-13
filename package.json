@@ -1,0 +1,19 @@
+{
+  "name": "laura398-lauramathieu_3_05032021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Laura398/Laura398-LauraMathieu_3_05032021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Laura398/Laura398-LauraMathieu_3_05032021/issues"
+  },
+  "homepage": "https://github.com/Laura398/Laura398-LauraMathieu_3_05032021#readme"
+}
