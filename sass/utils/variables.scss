@@ -1,0 +1,36 @@
+/*Fonts*/
+
+@font-face
+{
+    font-family: 'Shrikhand';
+    src: url('../polices/Shrikhand-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1em;
+}
+
+@font-face
+{
+    font-family: 'Roboto';
+    src: url('../polices/Roboto-Regular-webfont.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1em;
+}
+
+@font-face
+{
+    font-family: 'Roboto-bold';
+    src: url('../polices/Roboto-Bold-webfont.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1em;
+}
+
+/*Colors*/
+
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$background: rgb(234, 234, 234);
+$shadow: rgb(206, 206, 206);

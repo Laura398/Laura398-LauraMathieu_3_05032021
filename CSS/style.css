@@ -1,17 +1,69 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 3 | @import "/sass/utils/variables.scss";
- *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   sass\main.scss 3:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 3 \2502  @import \"/sass/utils/variables.scss\";\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   sass\\main.scss 3:9  root stylesheet";
+/*Documents import*/
+/*Fonts*/
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../polices/Shrikhand-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1em;
 }
+@font-face {
+  font-family: "Roboto";
+  src: url("../polices/Roboto-Regular-webfont.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1em;
+}
+@font-face {
+  font-family: "Roboto-bold";
+  src: url("../polices/Roboto-Bold-webfont.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1em;
+}
+/*Colors*/
+body {
+  width: 100%;
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  color: black;
+}
+
+header {
+  text-align: center;
+  margin: auto;
+}
+
+h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 2em;
+  margin: auto;
+}
+
+/*Header*/
+/*Search*/
+.custom-home-search {
+  margin: auto;
+  background-color: #eaeaea;
+  background: linear-gradient(to bottom, #cecece, #eaeaea, #eaeaea, #eaeaea, #eaeaea, #eaeaea, #eaeaea, #eaeaea);
+}
+.custom-home-search .fas.fa-map-marker-alt {
+  /*Localisation incon*/
+  position: relative;
+  color: black;
+  font-size: 1.4em;
+}
+.custom-home-search input {
+  border: none;
+  background-color: #eaeaea;
+  font-family: "Roboto-bold";
+  color: black;
+  font-size: 1.4em;
+  margin: 10px;
+}
+.custom-home-search input::placeholder {
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

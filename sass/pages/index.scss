@@ -1,0 +1,27 @@
+/*Header*/
+
+/*Search*/
+
+.custom-home-search {
+    margin: auto;
+    background-color: $background;
+    background: linear-gradient(to bottom, $shadow, $background, $background, $background, $background, $background, $background, $background);
+    
+    .fas.fa-map-marker-alt {  /*Localisation incon*/
+        position: relative;
+        color: black;
+        font-size: 1.4em;
+    }
+
+    input {
+        border: none;
+        background-color: $background;
+        font-family: 'Roboto-bold';
+        color: black;
+        font-size: 1.4em;
+        margin: 10px;
+        &::placeholder {
+            color: black;
+        }
+    }
+}
