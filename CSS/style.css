@@ -75,6 +75,7 @@ a {
   padding: 15px;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 30px;
+  vertical-align: middle;
 }
 .button a {
   color: white;
@@ -130,14 +131,14 @@ a {
 }
 .head__nav {
   width: 50%;
-  padding-top: 30px;
+  padding-top: 50px;
   text-align: center;
   border-bottom: solid 2px #f6f6f6;
 }
 .head__text {
   background-color: #f6f6f6;
   width: 50%;
-  padding-top: 30px;
+  padding-top: 50px;
   font-size: 1.2em;
 }
 @media all and (max-width: 750px) {
@@ -146,11 +147,11 @@ a {
   }
   .head__nav {
     width: 100%;
-    padding: 30px 0 10px 0;
+    padding: 50px 0 10px 0;
   }
   .head__text {
     width: 100%;
-    padding: 30px 0 10px 0;
+    padding: 50px 0 10px 0;
   }
 }
 

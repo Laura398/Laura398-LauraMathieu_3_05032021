@@ -6,6 +6,7 @@
     padding: 15px;
     background: linear-gradient($color-secondary, $color-primary);
     border-radius: 30px;
+    vertical-align: middle;
     a {
         @include link-text-color (white);
     }

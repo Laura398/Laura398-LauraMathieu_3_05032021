@@ -18,6 +18,7 @@
         background-color: $bg;
         @include top-box-big;
         font-size: 1.2em;
+        
     }
     @media all and (max-width: 750px) {
         display: block;
