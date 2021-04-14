@@ -1,0 +1,7 @@
+@mixin link-text-color ($color) {
+    @if $color == white {
+        color: white;
+    } @else {
+        color: black;
+    }
+}

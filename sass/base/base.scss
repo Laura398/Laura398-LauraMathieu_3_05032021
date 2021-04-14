@@ -1,9 +1,12 @@
 body {
-    width: 100%;
+    width: 80%;
+    margin: auto;
     background-color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     color: black;
+    border-left: solid 2px $background;
+    border-right: solid 2px $background;
 }
 
 header {
@@ -16,4 +19,14 @@ h1 {
     font-size: 2em;
     padding-top: 10px;
     margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    @include link-text-color (black)
 }

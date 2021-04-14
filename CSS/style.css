@@ -23,11 +23,14 @@
 }
 /*Colors*/
 body {
-  width: 100%;
+  width: 80%;
+  margin: auto;
   background-color: white;
   font-family: "Roboto", sans-serif;
   font-size: 1em;
   color: black;
+  border-left: solid 2px #eaeaea;
+  border-right: solid 2px #eaeaea;
 }
 
 header {
@@ -42,8 +45,29 @@ h1 {
   margin: 0;
 }
 
-/*Header*/
-/*Search*/
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  width: 30%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  padding: 15px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 30px;
+}
+.button a {
+  color: white;
+}
+
 .custom-home-search {
   background-color: #eaeaea;
   background: linear-gradient(to bottom, #cecece, #eaeaea, #eaeaea, #eaeaea, #eaeaea, #eaeaea, #eaeaea, #eaeaea);
@@ -67,6 +91,8 @@ h1 {
   color: black;
 }
 
+/*Header*/
+/*Search*/
 .head {
   width: 100%;
   display: flex;

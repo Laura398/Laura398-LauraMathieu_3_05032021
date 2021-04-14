@@ -1,0 +1,12 @@
+.button {
+    width: 30%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    padding: 15px;
+    background: linear-gradient($color-secondary, $color-primary);
+    border-radius: 30px;
+    a {
+        @include link-text-color (white);
+    }
+}

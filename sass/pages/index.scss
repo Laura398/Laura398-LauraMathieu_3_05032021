@@ -2,30 +2,6 @@
 
 /*Search*/
 
-.custom-home-search {
-    background-color: $background;
-    background: linear-gradient(to bottom, $shadow, $background, $background, $background, $background, $background, $background, $background);
-    
-    .fas.fa-map-marker-alt {  /*Localisation incon*/
-        position: relative;
-        color: black;
-        font-size: 1.4em;
-        margin: 20px 0;
-        padding-left: 20px;
-    }
-
-    input {
-        border: none;
-        background-color: $background;
-        font-family: 'Roboto-bold';
-        color: black;
-        font-size: 1.4em;
-        &::placeholder {
-            color: black;
-        }
-    }
-}
-
 .head {
     width: 100%;
     display: flex;
@@ -41,5 +17,11 @@
     &__text {
         width: 50%;
         background-color: $bg;
+    }
+}
+
+nav {
+    >ul {
+        
     }
 }
