@@ -26,3 +26,38 @@ figure {
         padding: 10px 20px;
     }
 }
+
+.figcaption {
+    display: flex;
+    flex-wrap: wrap;
+    &__text {
+        width: 80%;
+    }
+    &__heart {
+        width: 20%;
+    }
+}
+
+.icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /*Hearts*/
+
+  .heart::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 100; content: "\f004";
+    font-size: 2em;
+  }
+
+  .figcaption__heart:hover {
+    .heart::before {
+        font-weight: 1000;
+        font-size: 2em;
+        color: $color-primary;
+        transition: all 1s;
+    }
+  }

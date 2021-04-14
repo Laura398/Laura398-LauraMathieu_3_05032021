@@ -1,0 +1,29 @@
+footer {
+    background-color: $footer-bg;
+    color: white;
+    padding: 10px 20px;
+    h3 {
+        font-family: 'Shrikhand';
+    }
+    ul li {
+        padding: 5px;
+        a {
+            color: white;
+            font-family: 'Roboto';
+            i {
+                padding-right: 5px;
+            }
+        &:hover {
+            font-family: 'Roboto-bold';
+            font-size: 1.05em;
+            transition: 0.3s;
+        }
+        }
+    }
+    
+}
+
+.fas.fa-utensils {
+    font-size: 1.2em;
+    padding-right: 10px;
+}

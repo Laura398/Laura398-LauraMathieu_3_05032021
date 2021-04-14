@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Documents import*/
 /*Fonts*/
 @font-face {
@@ -77,6 +78,7 @@ a {
 section {
   background-color: #f6f6f6;
   padding-top: 40px;
+  margin-top: 2px;
 }
 
 /*Website formating*/
@@ -92,6 +94,10 @@ section {
 }
 .button a {
   color: white;
+}
+.button:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
 }
 @media all and (max-width: 900px) {
   .button {
@@ -126,6 +132,40 @@ figure img {
 }
 figure figcaption {
   padding: 10px 20px;
+}
+
+.figcaption {
+  display: flex;
+  flex-wrap: wrap;
+}
+.figcaption__text {
+  width: 80%;
+}
+.figcaption__heart {
+  width: 20%;
+}
+
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*Hearts*/
+.heart::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 100;
+  content: "";
+  font-size: 2em;
+}
+
+.figcaption__heart:hover .heart::before {
+  font-weight: 1000;
+  font-size: 2em;
+  color: #9356DC;
+  transition: all 1s;
 }
 
 /*Menus from Index*/
@@ -163,6 +203,35 @@ figure figcaption {
 }
 
 /*Form from Index*/
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 10px 20px;
+}
+footer h3 {
+  font-family: "Shrikhand";
+}
+footer ul li {
+  padding: 5px;
+}
+footer ul li a {
+  color: white;
+  font-family: "Roboto";
+}
+footer ul li a i {
+  padding-right: 5px;
+}
+footer ul li a:hover {
+  font-family: "Roboto-bold";
+  font-size: 1.05em;
+  transition: 0.3s;
+}
+
+.fas.fa-utensils {
+  font-size: 1.2em;
+  padding-right: 10px;
+}
+
 /*Header*/
 /*Search*/
 .head {
@@ -177,14 +246,12 @@ figure figcaption {
   width: 50%;
   padding-top: 50px;
   text-align: center;
-  border-bottom: solid 2px #f6f6f6;
 }
 .head__text {
   background-color: #f6f6f6;
   width: 50%;
   padding-top: 50px;
   font-size: 1.2em;
-  border-bottom: solid 2px white;
 }
 @media all and (max-width: 900px) {
   .head {
@@ -232,6 +299,17 @@ nav .txt {
 nav .txt i {
   color: #7e7e7e;
   font-size: 1.2em;
+}
+nav .txt:hover {
+  background-color: #d5b3ff;
+  transition: 0.5s;
+}
+nav .txt--mod {
+  background-color: #f5edff;
+}
+nav .txt--mod:hover {
+  background-color: #d5b3ff;
+  transition: 0.5s;
 }
 
 .fas.fa-mobile-alt, .fas.fa-store {
