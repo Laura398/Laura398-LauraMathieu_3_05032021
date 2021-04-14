@@ -1,7 +1,22 @@
+@mixin form {
+    color: black;
+    font-size: 1.4em;
+}
+
+@mixin top-box-big {
+    width: 50%;
+    padding-top: 30px;
+}
+
+@mixin top-box-small {
+    width: 100%;
+    padding: 30px 0 10px 0;
+}
+
 @mixin link-text-color ($color) {
     @if $color == white {
         color: white;
     } @else {
         color: black;
-    }
+    }   
 }

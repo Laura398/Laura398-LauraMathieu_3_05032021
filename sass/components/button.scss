@@ -9,4 +9,7 @@
     a {
         @include link-text-color (white);
     }
+    @media all and (max-width: 750px) {
+        width: 50%;
+    }
 }
