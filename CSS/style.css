@@ -51,10 +51,10 @@ h1 {
 }
 
 h2 {
-  width: 70%;
+  width: 80%;
   margin: auto;
   font-family: "Roboto-bold";
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 ul {
@@ -68,21 +68,21 @@ a {
 }
 
 .button {
-  width: 30%;
+  width: 40%;
   margin: auto;
   margin-top: 40px;
   margin-bottom: 50px;
   padding: 15px;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 30px;
-  vertical-align: middle;
+  font-size: 0.9em;
 }
 .button a {
   color: white;
 }
-@media all and (max-width: 750px) {
+@media all and (max-width: 900px) {
   .button {
-    width: 50%;
+    width: 60%;
   }
 }
 
@@ -141,7 +141,7 @@ a {
   padding-top: 50px;
   font-size: 1.2em;
 }
-@media all and (max-width: 750px) {
+@media all and (max-width: 900px) {
   .head {
     display: block;
   }
@@ -163,7 +163,7 @@ nav ul {
   margin-top: -20px;
 }
 nav ul li {
-  margin: 60px;
+  margin: 60px 20px;
 }
 nav .num {
   position: relative;

@@ -20,7 +20,7 @@
         font-size: 1.2em;
         
     }
-    @media all and (max-width: 750px) {
+    @media all and (max-width: 900px) {
         display: block;
         &__nav {
             @include top-box-small;
@@ -42,7 +42,7 @@ nav {
     }
 
     ul li {
-        margin: 60px;
+        margin: 60px 20px;
     }
 
     .num {
