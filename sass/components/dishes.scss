@@ -3,7 +3,9 @@
         display: table;
         text-transform: uppercase;
         font-size: 1em;
-        margin-bottom: 20px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        width: 90%;
         &:after {
             border-bottom: 3px solid $color-tertiary;
             content: '';
@@ -14,9 +16,13 @@
     &__dishes {
         display: flex;
         flex-wrap: wrap;
+        align-items:flex-end;
+        justify-content: space-between;
         width: 90%;
         font-family: 'Roboto';
         margin: auto;
+        margin-bottom: 10px;
+        padding: 10px;
         background-color: white;
         border-radius: 10px;
         box-shadow: $box-shadow;
@@ -28,6 +34,9 @@
             font-family: 'Roboto-bold';
             font-size: 1.2em;
         }
+    }
+    &__price {
+        width: 10%;
     }
 }
 
