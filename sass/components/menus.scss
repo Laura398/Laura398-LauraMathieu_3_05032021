@@ -8,6 +8,7 @@
 }
 
 figure {
+    position: relative;
     width: 335px;
     height: 250px;
     margin: 20px;
@@ -21,6 +22,15 @@ figure {
         overflow: hidden;
         object-fit: cover;
         border-radius: 20px 20px 0 0;
+    }
+    .new {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        color: rgb(0, 135, 102);
+        background-color: rgb(153, 226, 208);
+        padding: 5px 10px;
+        border-radius: 2px;
     }
     figcaption {
         padding: 10px 20px;
