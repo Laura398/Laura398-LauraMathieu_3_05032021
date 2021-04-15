@@ -223,7 +223,7 @@ footer ul li a i {
 }
 footer ul li a:hover {
   font-family: "Roboto-bold";
-  font-size: 1.05em;
+  color: #FF79DA;
   transition: 0.3s;
 }
 

@@ -20,3 +20,11 @@
         color: black;
     }   
 }
+
+@mixin test {
+    @if (lightness($color-primary) < 80%) {
+        color: white;
+    } @else {
+        color: black;
+    }   
+}
