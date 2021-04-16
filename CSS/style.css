@@ -91,6 +91,7 @@ section {
   padding: 15px;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 30px;
+  box-shadow: 3px 3px 6px #cecece, -3px 3px 6px #cecece;
   font-family: "Roboto";
   font-size: 1em;
   text-align: center;
@@ -104,8 +105,9 @@ section {
   text-align: center;
 }
 .button:hover {
-  transform: scale(1.05);
-  transition: 0.3s;
+  background: linear-gradient(rgba(239, 116, 218, 0.8), rgba(157, 90, 220, 0.8));
+  box-shadow: 6px 6px 10px #cecece, -6px 6px 10px #cecece;
+  transition: all 0.3s;
 }
 @media all and (max-width: 900px) {
   .button {

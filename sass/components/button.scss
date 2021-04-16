@@ -6,6 +6,7 @@
     padding: 15px;
     background: linear-gradient($color-secondary, $color-primary);
     border-radius: 30px;
+    box-shadow: $button-shadow;
     font-family: 'Roboto';
     font-size: 1em;
     text-align: center;
@@ -18,8 +19,9 @@
         text-align: center;
     }
     &:hover {
-        transform: scale(1.05);
-        transition: .3s;
+        background: linear-gradient(rgb(239, 116, 218, 0.8), rgb(157, 90, 220, 0.8));
+        box-shadow: $button-shadow-hover;
+        transition: all .3s;
     }
     @media all and (max-width: 900px) {
         width: 60%;

@@ -42,3 +42,5 @@ $nav-hover: rgb(213, 179, 255);
 $degrade: linear-gradient($color-secondary, $color-primary);
 
 $box-shadow: 3px 3px 6px $background, -3px 3px 6px $background;
+$button-shadow: 3px 3px 6px $shadow, -3px 3px 6px $shadow;
+$button-shadow-hover: 6px 6px 10px $shadow, -6px 6px 10px $shadow;
