@@ -20,6 +20,10 @@
         font-weight: 1000;
         font-size: 2em;
         color: $color-primary;
+        display: inline;
+        background: linear-gradient($color-primary, $color-secondary);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
         transition: all 1s;
     }
   }
@@ -29,7 +33,7 @@
       cursor: pointer;
       font-weight: 1000;
       font-size: 2em;
-      color: $color-primary;
+      color: linear-gradient(#9356DC 0%, #FF79DA 100%);
       transition: all 1s;
     }
   }

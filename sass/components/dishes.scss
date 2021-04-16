@@ -28,8 +28,13 @@
         box-shadow: $box-shadow;
     }
     &__text {
-        width: 80%;
+        width: 79%;
+        height: 50px;
+        line-height: 25px;
         font-size: 0.9em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         .text__strong {
             font-family: 'Roboto-bold';
             font-size: 1.2em;

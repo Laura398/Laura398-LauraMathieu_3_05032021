@@ -6,9 +6,16 @@
     padding: 15px;
     background: linear-gradient($color-secondary, $color-primary);
     border-radius: 30px;
-    font-size: 0.9em;
+    font-family: 'Roboto';
+    font-size: 1em;
+    text-align: center;
     a {
         @include link-text-color (white);
+    }
+    a[title="Commander"] {
+        font-family: 'Roboto';
+        font-size: 1.2em;
+        text-align: center;
     }
     &:hover {
         transform: scale(1.05);
@@ -18,3 +25,7 @@
         width: 60%;
     }
 }
+
+.button.button-pages {
+        width: 200px;
+    }

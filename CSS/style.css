@@ -91,10 +91,17 @@ section {
   padding: 15px;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 30px;
-  font-size: 0.9em;
+  font-family: "Roboto";
+  font-size: 1em;
+  text-align: center;
 }
 .button a {
   color: white;
+}
+.button a[title=Commander] {
+  font-family: "Roboto";
+  font-size: 1.2em;
+  text-align: center;
 }
 .button:hover {
   transform: scale(1.05);
@@ -104,6 +111,10 @@ section {
   .button {
     width: 60%;
   }
+}
+
+.button.button-pages {
+  width: 200px;
 }
 
 /*Pink Button*/
@@ -136,8 +147,13 @@ section {
   box-shadow: 3px 3px 6px #eaeaea, -3px 3px 6px #eaeaea;
 }
 .container__text {
-  width: 80%;
+  width: 79%;
+  height: 50px;
+  line-height: 25px;
   font-size: 0.9em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .container__text .text__strong {
   font-family: "Roboto-bold";
@@ -173,6 +189,10 @@ section {
   font-weight: 1000;
   font-size: 2em;
   color: #9356DC;
+  display: inline;
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   transition: all 1s;
 }
 
@@ -180,7 +200,7 @@ section {
   cursor: pointer;
   font-weight: 1000;
   font-size: 2em;
-  color: #9356DC;
+  color: linear-gradient(#9356DC 0%, #FF79DA 100%);
   transition: all 1s;
 }
 
@@ -417,8 +437,9 @@ header figure figcaption h2 {
   font-family: "Shrikhand";
 }
 header figure figcaption span {
-  font-size: 0.5em;
+  font-size: 0.8em;
   padding-left: 20px;
+  cursor: pointer;
 }
 header img {
   position: relative;
