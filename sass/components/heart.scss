@@ -6,34 +6,33 @@
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  }
+}
 
-  /*Hearts*/
+/*Hearts*/
 
+.heart::before {
+  font-family: "Font Awesome 5 Free"; font-weight: 100; content: "\f004";
+  font-size: 2em;
+}
+
+.figcaption__heart:hover {
   .heart::before {
-    font-family: "Font Awesome 5 Free"; font-weight: 100; content: "\f004";
-    font-size: 2em;
-  }
-
-  .figcaption__heart:hover {
-    .heart::before {
-        font-weight: 1000;
-        font-size: 2em;
-        color: $color-primary;
-        display: inline;
-        background: linear-gradient($color-primary, $color-secondary);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transition: all 1s;
-    }
-  }
-
-  .icon.heart:hover {
-    .heart::before {
-      cursor: pointer;
       font-weight: 1000;
       font-size: 2em;
-      color: linear-gradient(#9356DC 0%, #FF79DA 100%);
+      color: $color-primary;
+      display: inline;
+      background: linear-gradient($color-primary, $color-secondary);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
       transition: all 1s;
-    }
   }
+}
+
+.icon.heart:hover {
+  .heart::before {
+    cursor: pointer;
+    font-weight: 1000;
+    font-size: 2em;
+    color: linear-gradient(#9356DC 0%, #FF79DA 100%);
+  }
+}
