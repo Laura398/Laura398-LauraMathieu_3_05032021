@@ -1,9 +1,11 @@
 .icon::before {
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
+  position: absolute;
+  right: 10%;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
   }
 
   /*Hearts*/
@@ -19,5 +21,15 @@
         font-size: 2em;
         color: $color-primary;
         transition: all 1s;
+    }
+  }
+
+  .icon.heart:hover {
+    .heart::before {
+      cursor: pointer;
+      font-weight: 1000;
+      font-size: 2em;
+      color: $color-primary;
+      transition: all 1s;
     }
   }
