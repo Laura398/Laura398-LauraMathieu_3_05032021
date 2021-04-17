@@ -42,6 +42,7 @@ section figure {
     flex-wrap: wrap;
     &__text {
         width: 80%;
+        white-space: nowrap;
     }
     &__heart {
         width: 20%;
