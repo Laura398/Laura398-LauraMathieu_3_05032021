@@ -119,6 +119,7 @@ section {
 }
 
 /*Pink Button*/
+/*Delays for dishes*/
 .container h2 {
   display: table;
   text-transform: uppercase;
@@ -520,8 +521,8 @@ header img {
 
 .restaurant-heart {
   position: relative;
-  margin-top: 30px;
   margin-left: 70px;
+  margin-top: 30px;
 }
 
 .pages-section {
