@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*Documents import*/
 /*Fonts*/
 @font-face {
@@ -25,68 +24,6 @@
 /*Colors*/
 /*Variables*/
 /*Mixins*/
-@keyframes custom-loading {
-  0% {
-    transform: scale(0);
-  }
-  1% {
-    transform: rotate(0deg);
-  }
-  99% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-@keyframes index1 {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-.custom-loading-spinner {
-  cursor: progress;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.custom-loading-spinner::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 10001;
-  overflow: hidden;
-  background: white;
-  opacity: 1;
-}
-
-.custom-loading-spinner::after {
-  box-sizing: border-box;
-  z-index: 10002;
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: 200px;
-  border: 3px solid #f3f3f3;
-  border-top: 3px solid #3498db;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: custom-loading 1s linear 2 both;
-}
-
-.index {
-  position: absolute;
-  z-index: 2000;
-  animation: index1 0ms 2s both;
-}
-
 body {
   position: relative;
   width: 80%;
@@ -231,43 +168,109 @@ section {
   width: 20%;
 }
 
-.icon::before {
+.heart-container {
   position: absolute;
-  right: 10%;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
+  right: 30px;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
 }
 
-/*Hearts*/
-.heart::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 100;
-  content: "";
-  font-size: 2em;
+.heart-clip {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  clip-path: url(#svgPath);
 }
-
-.figcaption__heart:hover .heart::before {
-  font-weight: 1000;
-  font-size: 2em;
-  color: #9356DC;
-  display: inline;
+.heart-clip:hover::before {
+  transform: scale(1);
+  opacity: 1;
+}
+.heart-clip::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
   background: linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 1s;
+  opacity: 0;
+  transform: scale(0);
+  transition: transform 0.3s linear, opacity 0.3s linear;
+  transform-origin: center 80%;
 }
 
-.icon.heart:hover .heart::before {
-  cursor: pointer;
-  font-weight: 1000;
-  font-size: 2em;
-  color: linear-gradient(#9356DC 0%, #FF79DA 100%);
+.heart-stroke {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: #646464;
 }
 
 /*Hearts*/
+@keyframes custom-loading {
+  0% {
+    transform: scale(0);
+  }
+  1% {
+    transform: rotate(0deg);
+  }
+  99% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes index1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.custom-loading-spinner {
+  cursor: progress;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.custom-loading-spinner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10001;
+  overflow: hidden;
+  background: white;
+  opacity: 1;
+}
+
+.custom-loading-spinner::after {
+  box-sizing: border-box;
+  z-index: 10002;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 200px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: custom-loading 1s linear 2 both;
+}
+
+.index {
+  position: absolute;
+  z-index: 2000;
+  animation: index1 0ms 2s both;
+}
+
 /*Menus de l'index*/
 .menus-container {
   display: flex;
@@ -312,6 +315,7 @@ section figure figcaption {
 }
 .figcaption__text {
   width: 80%;
+  white-space: nowrap;
 }
 .figcaption__heart {
   width: 20%;
@@ -494,7 +498,7 @@ header figure figcaption {
   border-radius: 35px 35px 0 0;
   margin-top: -50px;
   margin-bottom: -30px;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-left: -20px;
 }
 header figure figcaption h2 {
@@ -512,6 +516,12 @@ header img {
   height: 265px;
   overflow: hidden;
   object-fit: cover;
+}
+
+.restaurant-heart {
+  position: relative;
+  margin-top: 30px;
+  margin-left: 70px;
 }
 
 .pages-section {
