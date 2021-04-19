@@ -17,7 +17,7 @@
     }
 }
 
- @for $i from 1 through 12 {
+ @for $i from 1 through 13 {
     .delay-#{$i} {
         animation: fadein 0.5s 0.1s*$i both;
     }

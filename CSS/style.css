@@ -247,7 +247,55 @@ section {
   animation: fadein 0.5s 1.2s both;
 }
 
+.delay-13 {
+  animation: fadein 0.5s 1.3s both;
+}
+
 /*Delays for dishes*/
+@keyframes sliding-icon {
+  0% {
+    left: 0;
+    display: none;
+    background: white;
+  }
+  10% {
+    left: 10%;
+    display: flex;
+    background: #99E2D0;
+  }
+  50% {
+    left: 50%;
+    display: flex;
+    background: #99E2D0;
+  }
+  100% {
+    left: 100%;
+    display: flex;
+    background: #99E2D0;
+  }
+}
+@keyframes sliding-icon-back {
+  0% {
+    left: 100%;
+    display: flex;
+    background: #99E2D0;
+  }
+  10% {
+    left: 90%;
+    display: flex;
+    background: #99E2D0;
+  }
+  50% {
+    left: 50%;
+    display: flex;
+    background: #99E2D0;
+  }
+  100% {
+    left: 0;
+    display: none;
+    background: white;
+  }
+}
 .container h2 {
   text-transform: uppercase;
   font-size: 1em;
@@ -293,13 +341,15 @@ section {
   display: flex;
   padding: 10px 0 10px 0;
   left: 20px;
-  background-color: white;
+  background-color: #99E2D0;
   height: 50px;
   border-radius: 0 15px 15px 0;
   justify-content: center;
   align-items: center;
   color: white;
   font-size: 1.3em;
+  animation: sliding-icon-back;
+  transition: all 0.25s;
 }
 
 .text-normal {
@@ -317,28 +367,6 @@ section {
   font-size: 1.2em;
 }
 
-@keyframes sliding-icon {
-  0% {
-    left: 0;
-    display: none;
-    background: white;
-  }
-  10% {
-    left: 10%;
-    display: flex;
-    background: #99E2D0;
-  }
-  50% {
-    left: 50%;
-    display: flex;
-    background: #99E2D0;
-  }
-  100% {
-    left: 100%;
-    display: flex;
-    background: #99E2D0;
-  }
-}
 .container__dishes:hover .container__text {
   width: 77%;
   height: 50px;

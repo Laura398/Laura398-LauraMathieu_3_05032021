@@ -1,3 +1,49 @@
+@keyframes sliding-icon {
+    0% {
+        left: 0;
+        display: none;
+        background: white;
+    }
+    10% {
+        left: 10%;
+        display: flex;
+        background: $color-tertiary;
+    }
+    50% {
+        left: 50%;
+        display: flex;
+        background: $color-tertiary;
+    }
+    100% {
+        left: 100%;
+        display: flex;
+        background: $color-tertiary;
+    }
+}
+
+@keyframes sliding-icon-back {
+    0% {
+        left: 100%;
+        display: flex;
+        background: $color-tertiary;
+    }
+    10% {
+        left: 90%;
+        display: flex;
+        background: $color-tertiary;
+    }
+    50% {
+        left: 50%;
+        display: flex;
+        background: $color-tertiary;
+    }
+    100% {
+        left: 0;
+        display: none;
+        background: white;
+    }
+}
+
 .container {;
     h2 {
         text-transform: uppercase;
@@ -44,15 +90,16 @@
         display: flex;
         padding: 10px 0 10px 0;
         left: 20px;
-        background-color: white;
+        background-color: $color-tertiary;
         height: 50px;
         border-radius: 0 15px 15px 0;
         justify-content: center;
         align-items: center;
         color: white;
         font-size: 1.3em;
-    }
-    
+        animation: sliding-icon-back;
+        transition: all 0.25s;
+    }  
 }
 
 .text-normal {
@@ -69,34 +116,6 @@
         font-size: 1.2em;
     }
 }
-
-
-
-
-
-@keyframes sliding-icon {
-    0% {
-        left: 0;
-        display: none;
-        background: white;
-    }
-    10% {
-        left: 10%;
-        display: flex;
-        background: $color-tertiary;
-    }
-    50% {
-        left: 50%;
-        display: flex;
-        background: $color-tertiary;
-    }
-    100% {
-        left: 100%;
-        display: flex;
-        background: $color-tertiary;
-    }
-}
-
 
 .container__dishes:hover {
     .container {
