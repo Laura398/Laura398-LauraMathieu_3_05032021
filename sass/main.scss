@@ -3,11 +3,11 @@
 @import "utils/variables.scss"; /*Variables*/
 @import "utils/mixins.scss"; /*Mixins*/
 @import "base/base.scss"; /*Website formating*/
+@import "components/loader.scss";
 @import "components/button.scss"; /*Pink Button*/
 @import "components/delay.scss"; /*Delays for dishes*/
 @import "components/dishes.scss";
 @import "components/heart.scss"; /*Hearts*/
-@import "components/loader.scss";
 @import "components/menus.scss"; /*Menus from Index*/
 @import "layout/form"; /*Form from Index*/
 @import "layout/footer";
