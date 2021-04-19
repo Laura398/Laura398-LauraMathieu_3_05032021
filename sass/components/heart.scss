@@ -42,3 +42,92 @@
  left: 0;
  fill: rgb(100, 100, 100);
 }
+
+
+
+
+
+
+
+/*Test*/
+.heart-test {
+   font-family: "Font Awesome 5 Free"; content: "\f004";
+}
+
+.icon::before {
+   display: inline-block;
+   font-style: normal;
+   font-variant: normal;
+   text-rendering: auto;
+   -webkit-font-smoothing: antialiased;
+ }
+
+ .pages::before {
+   display: inline-block;
+   font-style: normal;
+   font-variant: normal;
+   text-rendering: auto;
+   -webkit-font-smoothing: antialiased;
+ }
+
+ /*Hearts*/
+
+ @keyframes heart-filling {
+   from {
+       bottom: 0;
+   }
+   to {
+       bottom: 25px;
+   }
+}
+
+ .heart-bor::before {
+   position: absolute;
+   z-index: 3;
+   font-family: "Font Awesome 5 Free"; content: "\f004";
+   color: rgb(97, 97, 97);
+   font-size: 1.7em;
+   margin-top: -2px;
+ }
+
+ .block {
+    position: absolute;
+    z-index: 2;
+    width: 28px;
+    height: 28px;
+    background-color: $bg;
+ }
+
+ .block2 {
+   position: absolute;
+   z-index: 4;
+   width: 28px;
+   height: 28px;
+   background-color: red;
+   margin-top: 30px;
+} 
+ 
+
+ .heart-bg::before {
+    z-index: 1;
+   font-family: "Font Awesome 5 Free"; font-weight: 1000; content: "\f004";
+   display: inline-block;
+   position: absolute;
+   font-size: 1.7em;
+   margin-top: -2px;
+   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
+
+ .figcaption__heart:hover {
+   .block {
+      animation: heart-filling 1s both;
+   }
+   .heart-bor::before {
+      background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: 1s;
+      }
+ }
