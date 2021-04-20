@@ -1,84 +1,6 @@
-.heart-container {
-  position: absolute;
-  right: 30px;
-  bottom: 20px;
-  width: 40px;
-  height: 40px;
-}
+/*Hearts*/
 
-.heart-clip {
- display: block;
- width: 100%;
- height: 100%;
- position: relative;
- overflow: hidden;
- clip-path: url(#svgPath);
-
- &:hover {
-    
-
-    &::before {
-       transform: scale(1);
-       opacity: 1;
-    }
- }
- &::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: linear-gradient($color-primary, $color-secondary);
-    opacity: 0;
-    transform: scale(0);
-    transition: transform 0.3s linear, opacity 0.3s linear;
-    transform-origin: center 80%;
- }
-}
-
-.heart-stroke {
- position: absolute;
- top: 0;
- left: 0;
- fill: rgb(100, 100, 100);
-}
-
-
-
-
-
-
-
-/*Test*/
-.heart-test {
-   font-family: "Font Awesome 5 Free"; content: "\f004";
-}
-
-.icon::before {
-   display: inline-block;
-   font-style: normal;
-   font-variant: normal;
-   text-rendering: auto;
-   -webkit-font-smoothing: antialiased;
- }
-
- .pages::before {
-   display: inline-block;
-   font-style: normal;
-   font-variant: normal;
-   text-rendering: auto;
-   -webkit-font-smoothing: antialiased;
- }
-
-
-
-
-
-
-
- /*Hearts*/
-
- @keyframes heart-filling {
+@keyframes heart-filling {
    from {
        bottom: 0;
    }
@@ -87,30 +9,11 @@
    }
 }
 
-
-@keyframes heart-unfilling {
-   from {
-       bottom: 25px;
-   }
-   to {
-       bottom: 0;
-   }
-}
-
- .heart-bor::before {
-   position: absolute;
-   z-index: 3;
-   font-family: "Font Awesome 5 Free"; content: "\f004";
-   color: rgb(97, 97, 97);
-   font-size: 1.7em;
-   margin-top: -2px;
- }
-
- .figcaption__heart-index {
+.figcaption__heart-index {
    position: absolute;
    top: 195px;
    right: 0;
- }
+}
 
 .figcaption__heart {
    cursor: pointer;
@@ -133,9 +36,17 @@
    background-color: white;
    }
 }
- 
 
- .heart-bg::before {
+.heart-bor::before {
+   position: absolute;
+   z-index: 3;
+   font-family: "Font Awesome 5 Free"; content: "\f004";
+   color: rgb(97, 97, 97);
+   font-size: 1.7em;
+   margin-top: -2px;
+}
+
+.heart-bg::before {
    z-index: 1;
    font-family: "Font Awesome 5 Free"; font-weight: 1000; content: "\f004";
    display: inline-block;
@@ -147,7 +58,8 @@
   -webkit-text-fill-color: transparent;
  }
 
- .figcaption__heart:hover {
+
+.figcaption__heart:hover {
    .block {
       
       animation: heart-filling 1s both;
@@ -160,9 +72,9 @@
       -webkit-text-fill-color: transparent;
       transition: 1s;
       }
- }
+}
 
- .figcaption__heart-index:hover {
+.figcaption__heart-index:hover {
    .block {
       position: absolute;
       top: 0;
@@ -177,4 +89,4 @@
       -webkit-text-fill-color: transparent;
       transition: 1s;
       }
- }
+}

@@ -76,6 +76,13 @@
         padding: 10px;
         overflow: hidden;
     }
+    &__text2 {
+        display: flex;
+        width: 87%;
+        height: 80px;
+        padding: 10px;
+        overflow: hidden;
+    }
     &__price {
         width: 13%;
         padding: 10px;
@@ -92,6 +99,22 @@
         left: 20px;
         background-color: $color-tertiary;
         height: 50px;
+        border-radius: 0 15px 15px 0;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 1.3em;
+        animation: sliding-icon-back;
+        transition: all 0.25s;
+    }  
+    &__icon2 {
+        overflow: hidden;
+        width: 0;
+        display: flex;
+        padding: 10px 0 10px 0;
+        left: 20px;
+        background-color: $color-tertiary;
+        height: 80px;
         border-radius: 0 15px 15px 0;
         justify-content: center;
         align-items: center;
@@ -117,6 +140,18 @@
     }
 }
 
+.text-normal2 {
+    font-family: 'Roboto';
+    font-size: 0.9em;
+    margin: 0;
+    padding: 0;
+    line-height: 25px;
+    &__strong {
+        font-family: 'Roboto-bold';
+        font-size: 1.2em;
+    }
+}
+
 .container__dishes:hover {
     .container {
         &__text {
@@ -126,13 +161,13 @@
             text-overflow: ellipsis;
             transition: 0.3s;
         }
-        &__price {
-            width: 9%;
+        &__price, &__price2 {
+            width: 10%;
             transition: 0.3s;
             padding-right: 20px;
             padding-left: 0;
         }
-        &__icon {
+        &__icon, &__icon2 {
             animation: sliding-icon 1s both;
             display: flex;
             padding: 10px;
