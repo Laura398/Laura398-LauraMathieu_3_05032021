@@ -520,14 +520,19 @@ section {
 .menus-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 95%;
   padding-bottom: 50px;
 }
 .menus-container a {
   width: 335px;
   height: 250px;
-  margin: 10px 0 10px -22px;
+  margin: 10px;
+}
+@media all and (max-width: 500px) {
+  .menus-container a {
+    margin: 10px 0 10px -60px;
+  }
 }
 
 section figure {
@@ -765,12 +770,6 @@ header img {
   height: 265px;
   overflow: hidden;
   object-fit: cover;
-}
-
-.restaurant-heart {
-  position: relative;
-  margin-left: 70px;
-  margin-top: 30px;
 }
 
 .pages-section {
