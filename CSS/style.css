@@ -589,6 +589,8 @@ section figure figcaption {
 
 /*Menus from Index*/
 .custom-home-search {
+  position: relative;
+  z-index: 2;
   background-color: #eaeaea;
   background: linear-gradient(to bottom, #cecece, #eaeaea, #eaeaea, #eaeaea, #eaeaea, #eaeaea, #eaeaea, #eaeaea);
 }
@@ -654,6 +656,8 @@ footer ul li a:hover {
 /*Header*/
 /*Search*/
 .head {
+  position: relative;
+  z-index: 1;
   width: 100%;
   display: flex;
   flex-direction: row-reverse;
