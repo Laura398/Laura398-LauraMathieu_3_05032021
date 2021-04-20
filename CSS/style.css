@@ -323,7 +323,7 @@ section {
 }
 .container__text {
   display: flex;
-  width: 87%;
+  width: 84%;
   height: 50px;
   padding: 10px;
   overflow: hidden;
@@ -331,17 +331,24 @@ section {
 .container__text2 {
   display: flex;
   width: 87%;
-  height: 80px;
   padding: 10px;
-  overflow: hidden;
+  white-space: initial;
 }
 .container__price {
-  width: 13%;
+  width: 10%;
   padding: 10px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   overflow: hidden;
+}
+.container__price2 {
+  width: 13%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  white-space: initial;
 }
 .container__icon {
   overflow: hidden;
@@ -355,7 +362,6 @@ section {
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 1.3em;
   animation: sliding-icon-back;
   transition: all 0.25s;
 }
@@ -366,7 +372,6 @@ section {
   padding: 10px 0 10px 0;
   left: 20px;
   background-color: #99E2D0;
-  height: 80px;
   border-radius: 0 15px 15px 0;
   justify-content: center;
   align-items: center;
@@ -382,6 +387,7 @@ section {
   margin: 0;
   padding: 0;
   line-height: 25px;
+  max-width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -410,8 +416,14 @@ section {
   text-overflow: ellipsis;
   transition: 0.3s;
 }
+.container__dishes:hover .container__text2 {
+  width: 77%;
+  white-space: initial;
+  overflow: hidden;
+  transition: 0.3s;
+}
 .container__dishes:hover .container__price, .container__dishes:hover .container__price2 {
-  width: 10%;
+  width: 15%;
   transition: 0.3s;
   padding-right: 20px;
   padding-left: 0;
@@ -420,7 +432,7 @@ section {
   animation: sliding-icon 1s both;
   display: flex;
   padding: 10px;
-  width: 14%;
+  width: 20%;
   transition: 0.3s;
 }
 .container__dishes:hover .fas.fa-check-circle {
