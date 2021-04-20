@@ -313,7 +313,7 @@ section {
 .container__dishes {
   display: flex;
   flex-wrap: nowrap;
-  align-items: space-between;
+  align-items: stretch;
   width: 90%;
   margin: auto;
   margin-bottom: 10px;
@@ -489,7 +489,7 @@ section {
 .heart-bg::before {
   z-index: 1;
   font-family: "Font Awesome 5 Free";
-  font-weight: 1000;
+  font-weight: 900;
   content: "";
   display: inline-block;
   position: absolute;
@@ -765,7 +765,6 @@ header figure figcaption {
   margin-top: -50px;
   margin-bottom: -30px;
   padding-top: 30px;
-  padding-left: -20px;
 }
 header figure figcaption h2 {
   font-family: "Shrikhand";
