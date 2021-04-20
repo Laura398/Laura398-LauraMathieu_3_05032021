@@ -489,30 +489,30 @@ section {
 }
 
 .figcaption__heart:hover .block {
-  animation: heart-filling 1s both;
+  animation: heart-filling 0.5s both;
   height: 0;
-  transition: 1s;
+  transition: 0.5s;
 }
 .figcaption__heart:hover .heart-bor::before {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .figcaption__heart-index:hover .block {
   position: absolute;
   top: 0;
-  animation: heart-filling 1s both;
+  animation: heart-filling 0.5s both;
   height: 0;
-  transition: 1s;
+  transition: 0.5s;
   margin-bottom: 0;
 }
 .figcaption__heart-index:hover .heart-bor::before {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 /*Hearts*/
