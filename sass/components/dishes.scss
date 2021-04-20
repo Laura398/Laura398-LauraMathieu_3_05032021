@@ -71,7 +71,7 @@
         } 
     &__text {
         display: flex;
-        width: 87%;
+        width: 84%;
         height: 50px;
         padding: 10px;
         overflow: hidden;
@@ -79,17 +79,24 @@
     &__text2 {
         display: flex;
         width: 87%;
-        height: 80px;
         padding: 10px;
-        overflow: hidden;
+        white-space: initial;
     }
     &__price {
-        width: 13%;
+        width: 10%;
         padding: 10px;
         display: flex;
         justify-content: center;
         align-items: flex-end;
         overflow: hidden;
+    }
+    &__price2 {
+        width: 13%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        white-space: initial;
     }
     &__icon {
         overflow: hidden;
@@ -103,7 +110,6 @@
         justify-content: center;
         align-items: center;
         color: white;
-        font-size: 1.3em;
         animation: sliding-icon-back;
         transition: all 0.25s;
     }  
@@ -114,7 +120,6 @@
         padding: 10px 0 10px 0;
         left: 20px;
         background-color: $color-tertiary;
-        height: 80px;
         border-radius: 0 15px 15px 0;
         justify-content: center;
         align-items: center;
@@ -131,6 +136,7 @@
     margin: 0;
     padding: 0;
     line-height: 25px;
+    max-width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -139,6 +145,7 @@
         font-size: 1.2em;
     }
 }
+
 
 .text-normal2 {
     font-family: 'Roboto';
@@ -161,8 +168,14 @@
             text-overflow: ellipsis;
             transition: 0.3s;
         }
+        &__text2 {
+            width: 77%;
+            white-space: initial;
+            overflow: hidden;
+            transition: 0.3s;
+        }
         &__price, &__price2 {
-            width: 10%;
+            width: 15%;
             transition: 0.3s;
             padding-right: 20px;
             padding-left: 0;
@@ -171,7 +184,7 @@
             animation: sliding-icon 1s both;
             display: flex;
             padding: 10px;
-            width: 14%;
+            width: 20%;
             transition: 0.3s;
         }
     }
