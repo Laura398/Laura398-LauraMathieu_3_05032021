@@ -44,25 +44,36 @@
     }
 }
 
-.container {;
+.container {
     h2 {
         text-transform: uppercase;
         font-size: 1em;
         padding-top: 20px;
         padding-bottom: 10px;
         width: 90%;
+        text-align: center;
         &:after {
             border-bottom: 3px solid $color-tertiary;
             content: '';
             display: block;
-            width: 15%;
-          }
+            width: 4%;
+            margin: auto;
+            
+        }
+        @media all and (max-width: 500px) {
+            width: 90%;
+            text-align: left;
+            &:after {
+                width: 12%;
+                margin-left: 0;
+            }
+        }
     }
     &__dishes {
         display: flex;
         flex-wrap: nowrap;
         align-items: stretch;
-        width: 90%;
+        width: 340px;
         margin: auto;
         margin-bottom: 10px;
         background-color: white;

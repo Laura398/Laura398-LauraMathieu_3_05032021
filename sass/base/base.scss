@@ -6,8 +6,6 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     color: black;
-    border-left: solid 2px $background;
-    border-right: solid 2px $background;
     @media all and (max-width: 750px) {
         width: 100%;
     }
@@ -50,5 +48,6 @@ a {
 section {
     background-color: $bg;
     padding-top: 40px;
+    margin: auto;
     margin-top: 2px;
 }
