@@ -676,7 +676,6 @@ footer ul li a:hover {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
-  margin-top: -16px;
   text-align: center;
 }
 .head__nav {
