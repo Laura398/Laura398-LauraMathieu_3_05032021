@@ -703,6 +703,11 @@ footer ul li a:hover {
   }
 }
 
+@-moz-document url-prefix() {
+  .head {
+    margin-top: -16px;
+  }
+}
 nav h2 {
   margin-left: 40px;
 }
