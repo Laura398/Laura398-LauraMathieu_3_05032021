@@ -677,6 +677,7 @@ footer ul li a:hover {
   flex-direction: row-reverse;
   flex-wrap: wrap;
   text-align: center;
+  margin-top: -16px;
 }
 .head__nav {
   width: 50%;
@@ -703,11 +704,6 @@ footer ul li a:hover {
   }
 }
 
-@-moz-document url-prefix() {
-  .head {
-    margin-top: -16px;
-  }
-}
 nav h2 {
   margin-left: 40px;
 }

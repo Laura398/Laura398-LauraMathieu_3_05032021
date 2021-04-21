@@ -8,6 +8,7 @@
     flex-direction: row-reverse;
     flex-wrap: wrap;
     text-align: center;
+    margin-top: -16px;
     &__nav {
         @include top-box-big;
         text-align: center;
@@ -28,11 +29,7 @@
     }
 }
 
-@-moz-document url-prefix() {
-    .head {
-      margin-top: -16px;
-    }
-  }
+
 
 nav {
     h2 {
