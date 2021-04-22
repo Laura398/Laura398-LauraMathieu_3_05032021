@@ -332,6 +332,18 @@ section {
   flex-wrap: nowrap;
   align-items: stretch;
   width: 340px;
+  height: 70px;
+  margin: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 3px 3px 6px #eaeaea, -3px 3px 6px #eaeaea;
+}
+.container__dishes2 {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  width: 340px;
   margin: 10px;
   margin-bottom: 10px;
   background-color: white;
@@ -433,19 +445,13 @@ section {
   text-overflow: ellipsis;
   transition: 0.3s;
 }
-.container__dishes:hover .container__text2 {
-  width: 77%;
-  white-space: initial;
-  overflow: hidden;
-  transition: 0.3s;
-}
-.container__dishes:hover .container__price, .container__dishes:hover .container__price2 {
+.container__dishes:hover .container__price {
   width: 15%;
   transition: 0.3s;
   padding-right: 20px;
   padding-left: 0;
 }
-.container__dishes:hover .container__icon, .container__dishes:hover .container__icon2 {
+.container__dishes:hover .container__icon {
   animation: sliding-icon 1s both;
   display: flex;
   padding: 10px;
@@ -453,6 +459,29 @@ section {
   transition: 0.3s;
 }
 .container__dishes:hover .fas.fa-check-circle {
+  animation: custom-loading 0.5s;
+}
+
+.container__dishes2:hover .container__text2 {
+  width: 77%;
+  white-space: initial;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.container__dishes2:hover .container__price2 {
+  width: 15%;
+  transition: 0.3s;
+  padding-right: 20px;
+  padding-left: 0;
+}
+.container__dishes2:hover .container__icon2 {
+  animation: sliding-icon 1s both;
+  display: flex;
+  padding: 10px;
+  width: 20%;
+  transition: 0.3s;
+}
+.container__dishes2:hover .fas.fa-check-circle {
   animation: custom-loading 0.5s;
 }
 

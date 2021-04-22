@@ -77,6 +77,18 @@
         flex-wrap: nowrap;
         align-items: stretch;
         width: 340px;
+        height: 70px;
+        margin: 10px;
+        margin-bottom: 10px;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: $box-shadow;
+        } 
+    &__dishes2 {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        width: 340px;
         margin: 10px;
         margin-bottom: 10px;
         background-color: white;
@@ -160,7 +172,6 @@
     }
 }
 
-
 .text-normal2 {
     font-family: 'Roboto';
     font-size: 0.9em;
@@ -182,19 +193,40 @@
             text-overflow: ellipsis;
             transition: 0.3s;
         }
+        &__price,{
+            width: 15%;
+            transition: 0.3s;
+            padding-right: 20px;
+            padding-left: 0;
+        }
+        &__icon,{
+            animation: sliding-icon 1s both;
+            display: flex;
+            padding: 10px;
+            width: 20%;
+            transition: 0.3s;
+        }
+    }
+    .fas.fa-check-circle {
+        animation: custom-loading 0.5s;
+    }
+}
+
+.container__dishes2:hover {
+    .container {
         &__text2 {
             width: 77%;
             white-space: initial;
             overflow: hidden;
             transition: 0.3s;
         }
-        &__price, &__price2 {
+        &__price2 {
             width: 15%;
             transition: 0.3s;
             padding-right: 20px;
             padding-left: 0;
         }
-        &__icon, &__icon2 {
+        &__icon2 {
             animation: sliding-icon 1s both;
             display: flex;
             padding: 10px;
