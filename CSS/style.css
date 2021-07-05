@@ -706,10 +706,10 @@ footer ul li a:hover {
   flex-direction: row-reverse;
   flex-wrap: wrap;
   text-align: center;
-  margin-top: -16px;
 }
 .head__nav {
   width: 50%;
+  padding-top: 50px;
   text-align: center;
 }
 .head__text {
